@@ -141,7 +141,7 @@ Please not that all the client config files will ask for a password at some poin
 It is also possible to setup a Grafana dashboard, depicting the connection speed between peer servers and also the load time of some common pages both from the IR side of the tunnel and from the foreign servers themselves.
 To setup the Grafana dashboard and the requirements for that (Prometheus, exposed metrics, ...) you can run the monitoring_setup playbook (do that after the main ovpn setup).
 ```
-ansible-playbook -i playbooks/monitoring_setup.yml
+ansible-playbook -i inventory.yml playbooks/monitoring_setup.yml
 ```
 After the execution of this playbook, an admin password will be printed on the screen, copy that somewhere, because you'll not be able to see it anywhere else.
 Using the provided credentials, you'll be able to access the monitoring dashboard running on your IR server, port 3000 by default.
