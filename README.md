@@ -130,7 +130,7 @@ This will take some time, and then the servers will be ready to go.
 ### Adding some clients
 To add clients, simply run the addclient playbook:
 ```
-ansible-playbook -i inventory.yml playbooks/add_client.yml -l "Y.Y.Y.Y" --tags addclient
+ansible-playbook -i inventory.yml playbooks/add_client.yml -l "X.X.X.X" --tags addclient
 ```
 Note that how we limitted the execution of the playbook to the mentioned server (this is the B server, e.g. the one located in Iran).
 
